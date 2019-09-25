@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>速習 ES2019</title>
+</head>
+<body>
+<script>
+let data = {hoge: 'ほげ', foo: {piyo: 'ぴよ', goo: 'ぐう'}};
+let {hoge, foo, foo:{piyo, goo}} = data;
+console.log(hoge);
+console.log(foo);
+console.log(piyo);
+console.log(goo);
+</script>
+</body>
+</html>
