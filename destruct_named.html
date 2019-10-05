@@ -5,6 +5,16 @@
 <title>速習 ES2019</title>
 </head>
 <body>
-<script src="scripts/destruct_named.js"></script>
+<script>
+function calc({upper = 1, lower = 1, height = 1}) {
+  return (upper + lower) * height / 2
+}
+
+console.log(calc({
+  upper: 10,
+  lower: 10,
+  height: 10
+}))
+</script>
 </body>
 </html>
