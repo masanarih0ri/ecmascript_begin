@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>速習 ES2019</title>
+</head>
+<body>
+<script>
+let book = {
+  isbn:'9784774175683',
+  title:'AngularJSアプリケーションプログラミング',
+  price:3700
+}
+
+function getInfo({isbn, title}) {
+  console.log(isbn);
+  console.log(title);
+}
+
+getInfo(book);
+
+</script>
+</body>
+</html>
