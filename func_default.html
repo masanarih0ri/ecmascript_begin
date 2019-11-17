@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>速習 ES2019</title>
+</head>
+<body>
+<script>
+function show(name = "hoge") {
+  console.log(name);
+}
+
+show();
+show("fuga");
+
+function add(a,b = a) {
+  return a + b;
+}
+
+console.log(add(1, 4));
+console.log(add(1));
+
+function dateFormat(date = new Date) {
+  return date.toLocaleDateString();
+}
+
+console.log(dateFormat())
+console.log(dateFormat(new Date(2019, 10, 11, 11, 11, 11)))
+</script>
+</body>
+</html>
